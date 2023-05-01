@@ -6,9 +6,9 @@ private String date;
 private String time;
 private String description;
 private String vendor;
-private int amount;
+private String amount;
 
-    public transaction(String date, String time, String description, String vendor, int amount) {
+    public transaction(String date, String time, String description, String vendor, String amount) {
         this.date = date;
         this.time = time;
         this.description = description;
@@ -48,11 +48,11 @@ private int amount;
         this.vendor = vendor;
     }
 
-    public int getAmount() {
+    public String getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(String amount) {
         this.amount = amount;
     }
 }
